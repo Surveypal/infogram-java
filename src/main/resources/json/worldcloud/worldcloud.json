@@ -1,0 +1,36 @@
+{
+	"type": "chart",
+	"chart_type": "wordcloud",
+	"data": {
+		"sheets": [
+			{
+				"header": [ "Japan", "%"  ],
+				"rows": [
+					{
+						"color": "FC14F9",
+						"data": [ "Sato",  1.57 ]
+					},
+					[ "Suzuki", 1.50 ],
+					[ "Takahashi", 1.16 ]
+				]
+			},
+			{
+				"header": [ "England", "%" ],
+				"rows" : [
+					[ "Smith", 1.26 ],
+					[ "Jones", 0.75 ],
+					[ "Taylor", 0.59 ]
+				]
+			},
+			{
+				"header": [ "USA", "%" ],
+				"rows" : [
+					[ "Smith", 0.88  ],
+					[ "Johnson", 0.69 ],
+					[ "Williams", 0.57 ]
+				]
+			}
+		]
+	},
+	"colors" : ["#1D7BF5", "#599AF0", "#95BFF5", "#1DF548", "#5EF27C", "#83D693", "#CC2929", "#BF5A5A", "#EDC7C7"]
+}

@@ -1,0 +1,33 @@
+{
+	"type": "map",
+	"territory": "world",
+	"data": [
+		{
+			"title": "Japan",
+			"value": 126434964,
+			"label": "Japan",
+			"group": "A",
+			"color": "#0000FF"
+		},
+		{
+			"title": "United States",
+			"value": 318968000,
+			"label": "USA",
+			"group": "A",
+			"color": "#FF0000"
+		},
+		{
+			"title": "China",
+			"value": 1357380000,
+			"label": "China DPR",
+			"group": "B"
+		},
+		{
+			"title": "India",
+			"value": 1210193422,
+			"label": "India",
+			"group": "C",
+			"color": "#FFFF00"
+		}
+	]
+}

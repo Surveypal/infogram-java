@@ -1,0 +1,29 @@
+{
+	"type": "chart",
+	"chart_type": "table",
+	"data": {
+		"sheets": [
+			{
+				"header": [ "Membership", "United Nations", "NATO", "G7", "EU" ],
+				"rows": [
+					{
+						"header": "China",
+						"data": [ "x", "", "", "" ]
+					},
+					{
+						"header": "France",
+						"data": [ "x", "x", "x", "x" ]
+					},
+					{
+						"header": "Germany",
+						"data": [ "x", "x", "x", "x" ]
+					},
+					{
+						"header": "USA",
+						"data": [ "x", "x", "x", "" ]
+					}
+				]
+			}
+		]
+	}
+}

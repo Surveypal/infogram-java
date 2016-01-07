@@ -1,0 +1,7 @@
+[ {
+  "type" : "body",
+  "text" : "some text"
+}, {
+  "type" : "h1",
+  "text" : "some text"
+} ]

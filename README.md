@@ -1,3 +1,40 @@
+# Extension to the library
+- Added InfographicContent JSON bindings. Allows to marshall the content from pojo to JSON.
+
+```java
+
+	  InfographicContent content = new InfographicContent();
+		content.add(new Body().setText("some text"));
+    content.add(new HeadlineOne().setText("some headline"));
+		Chart myChart = new Chart();
+		myChart.setChartType("table");
+		Sheet myChartSheet = new Sheet().addHeader("Name")
+		                                .addHeader("Someone 1")
+		                                .addHeader("someone 2")
+		                                .addRow(new Row().setDataElement("x")
+		                                                 .setDataElement("x")
+		                                                 .setDataHeader("one")
+		                                                 .setColor("FC14F9"))
+		                                .addRow(new Row().setDataElement("x")
+		                                                 .setDataElement("")
+		                                                 .setDataHeader("two"));
+
+		myChart.setDataSheet(myChartSheet);
+		content.add(myChart);
+		final String contentJson = ContentObjectMapper.marshallJson(content, false);
+
+		// ...
+		InfogramAPI api = new InfogramAPI(KEY, SECRET);
+
+    Map<String, String> parameters = new HashMap<String, String>();
+    parameters.put("theme_id", "32");
+    parameters.put("publish", "true");
+    parameters.put("content", contentJson);
+
+
+```
+
+
 #Infogram-Java
 
 A library to view, create and update infographics on Infogr.am. For details on the different calls see https://developers.infogr.am/rest/
