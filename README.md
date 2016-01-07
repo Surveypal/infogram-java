@@ -3,9 +3,9 @@
 
 ```java
 
-	  InfographicContent content = new InfographicContent();
+	        InfographicContent content = new InfographicContent();
 		content.add(new Body().setText("some text"));
-    content.add(new HeadlineOne().setText("some headline"));
+                content.add(new HeadlineOne().setText("some headline"));
 		Chart myChart = new Chart();
 		myChart.setChartType("table");
 		Sheet myChartSheet = new Sheet().addHeader("Name")
@@ -26,10 +26,10 @@
 		// ...
 		InfogramAPI api = new InfogramAPI(KEY, SECRET);
 
-    Map<String, String> parameters = new HashMap<String, String>();
-    parameters.put("theme_id", "32");
-    parameters.put("publish", "true");
-    parameters.put("content", contentJson);
+	        Map<String, String> parameters = new HashMap<String, String>();
+	        parameters.put("theme_id", "32");
+	        parameters.put("publish", "true");
+	        parameters.put("content", contentJson);
 
 
 ```
