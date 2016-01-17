@@ -3,6 +3,7 @@ package net.infogram.api.content.map;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import net.infogram.api.content.InfographicElement;
 
 import javax.annotation.Generated;
@@ -11,38 +12,16 @@ import java.util.ArrayList;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @Generated("org.jsonschema2pojo")
 @JsonPropertyOrder({
-	                   "type",
 	                   "territory",
 	                   "data"
                    })
 public class Map extends InfographicElement
 {
-	final static String TYPE = "map";
-
-	@JsonProperty("type")
-	private String type = TYPE;
 	@JsonProperty("territory")
 	private String territory;
 	@JsonProperty("data")
 	private ArrayList<Datum> data = new ArrayList<Datum>();
 
-	/**
-	 * @return The type
-	 */
-	@JsonProperty("type")
-	public String getType()
-	{
-		return type;
-	}
-
-	/**
-	 * @param type The type
-	 */
-	@JsonProperty("type")
-	private void setType(String type)
-	{
-		this.type = type;
-	}
 
 	/**
 	 * @return The territory

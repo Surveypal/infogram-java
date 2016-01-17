@@ -10,38 +10,16 @@ import javax.annotation.Generated;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @Generated("org.jsonschema2pojo")
 @JsonPropertyOrder({
-	                   "type",
 	                   "text",
 	                   "author"
                    })
 public class Quote extends InfographicElement
 {
 
-	@JsonProperty("type")
-	private String type;
 	@JsonProperty("text")
 	private String text;
 	@JsonProperty("author")
 	private String author;
-
-	/**
-	 * @return The type
-	 */
-	@JsonProperty("type")
-	public String getType()
-	{
-		return type;
-	}
-
-	/**
-	 * @param type The type
-	 */
-	@JsonProperty("type")
-	public Quote setType(String type)
-	{
-		this.type = type;
-		return this;
-	}
 
 	/**
 	 * @return The text

@@ -7,35 +7,14 @@ import net.infogram.api.content.InfographicElement;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-	                   "type",
 	                   "text"
                    })
 public class Body extends InfographicElement
 {
-	final static String TYPE = "body";
 
-	@JsonProperty("type")
-	private String type = TYPE;
 	@JsonProperty("text")
 	private String text;
 
-	/**
-	 * @return The type
-	 */
-	@JsonProperty("type")
-	public String getType()
-	{
-		return type;
-	}
-
-	/**
-	 * @param type The type
-	 */
-	@JsonProperty("type")
-	private void setType(String type)
-	{
-		this.type = type;
-	}
 
 	/**
 	 * @return The text

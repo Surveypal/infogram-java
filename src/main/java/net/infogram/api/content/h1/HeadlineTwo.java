@@ -10,37 +10,13 @@ import javax.annotation.Generated;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @Generated("org.jsonschema2pojo")
 @JsonPropertyOrder({
-	                   "type",
 	                   "text"
                    })
 public class HeadlineTwo extends InfographicElement
 {
 
-	final static String TYPE = "h2";
-
-	@JsonProperty("type")
-	private String type = TYPE;
 	@JsonProperty("text")
 	private String text;
-
-	/**
-	 * @return The type
-	 */
-	@JsonProperty("type")
-	public String getType()
-	{
-		return type;
-	}
-
-	/**
-	 * @param type The type
-	 */
-	@JsonProperty("type")
-	private HeadlineTwo setType(String type)
-	{
-		this.type = type;
-		return this;
-	}
 
 	/**
 	 * @return The text

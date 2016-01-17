@@ -16,31 +16,9 @@ import javax.annotation.Generated;
 public class HeadlineOne extends InfographicElement
 {
 
-	final static String TYPE = "h1";
-
-	@JsonProperty("type")
-	private String type = TYPE;
 	@JsonProperty("text")
 	private String text;
 
-	/**
-	 * @return The type
-	 */
-	@JsonProperty("type")
-	public String getType()
-	{
-		return type;
-	}
-
-	/**
-	 * @param type The type
-	 */
-	@JsonProperty("type")
-	private HeadlineOne setType(String type)
-	{
-		this.type = type;
-		return this;
-	}
 
 	/**
 	 * @return The text

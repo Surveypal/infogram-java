@@ -10,13 +10,8 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Marshaller;
-import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.StringWriter;
-import java.nio.charset.StandardCharsets;
 
 public class ContentObjectMapper
 {
@@ -31,7 +26,7 @@ public class ContentObjectMapper
 	public static String marshallJson(Object pojo, boolean prettyPrint) throws IOException
 	{
 		StringWriter writer = new StringWriter();
-		mapper.enableDefaultTyping(ObjectMapper.DefaultTyping.OBJECT_AND_NON_CONCRETE);
+		mapper.enableDefaultTyping(ObjectMapper.DefaultTyping.JAVA_LANG_OBJECT);
 		mapper.configure(SerializationFeature.INDENT_OUTPUT, prettyPrint);
 		mapper.configure(SerializationFeature.WRAP_ROOT_VALUE, false);
 		mapper.writeValue(writer, pojo);
@@ -48,6 +43,7 @@ public class ContentObjectMapper
 	public static <T> T unmarshallJson(Class clazz, String json) throws IOException
 	{
 		mapper.enableDefaultTyping(ObjectMapper.DefaultTyping.OBJECT_AND_NON_CONCRETE);
+		mapper.configure(DeserializationFeature.UNWRAP_ROOT_VALUE, false);
 		return (T) mapper.readValue(json, clazz);
 	}
 
