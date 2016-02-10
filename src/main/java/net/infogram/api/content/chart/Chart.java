@@ -12,7 +12,8 @@ import javax.annotation.Generated;
 @Generated("org.jsonschema2pojo")
 @JsonPropertyOrder({
 	                   "chart_type",
-	                   "data"
+	                   "data",
+	                   "icon"
                    })
 public class Chart extends InfographicElement
 {
@@ -20,6 +21,8 @@ public class Chart extends InfographicElement
 	private String chartType;
 	@JsonProperty("data")
 	private Data data = new Data();
+	@JsonProperty("icon")
+	private String icon;
 
 	/**
 	 * @return The chartType
@@ -37,6 +40,22 @@ public class Chart extends InfographicElement
 	public void setChartType(String chartType)
 	{
 		this.chartType = chartType;
+	}
+
+	/**
+	 * @return The icon
+	 */
+	public String getIcon()
+	{
+		return icon;
+	}
+
+	/**
+	 * @param icon The icon
+	 */
+	public void setIcon(final String icon)
+	{
+		this.icon = icon;
 	}
 
 	/**
