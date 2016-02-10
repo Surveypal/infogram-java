@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.surveypal.infogram.api</groupId>
 	<artifactId>infogram-java</artifactId>
-	<version>0.0.3</version>
+	<version>0.0.5</version>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<distributionManagement.url></distributionManagement.url>
